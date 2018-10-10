@@ -49,7 +49,7 @@ sub _process_content
     my $ast = $gvg->parse( $content );
 
     my $renderer = Graphics::GVG::OpenGLRenderer->new;
-    my $obj = $renderer->make_drawer_obj( $ast );
+    my $obj = $renderer->make_obj( $ast );
     $self->_set_opengl( $obj );
 
     return;
